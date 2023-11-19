@@ -23,9 +23,9 @@ public class GridInputPanel extends JPanel {
 
 	public GridInputPanel(PixelArtMaker pam) {
 		this.pam = pam;
-		int response = JOptionPane.showOptionDialog(null, "Would you like to load previous art?",
-				"Make your choice, or DIE!", JOptionPane.YES_OPTION, JOptionPane.NO_OPTION, null, null, null);
-		if (response == 0) {
+		//int response = JOptionPane.showOptionDialog(null, "Would you like to load previous art?",
+		//		"Make your choice, or DIE!", JOptionPane.YES_OPTION, JOptionPane.NO_OPTION, null, null, null);
+		//if (response == 0) {
 			int ww = 0;
 			int wh = 0;
 			int c = 0;
@@ -55,15 +55,14 @@ public class GridInputPanel extends JPanel {
 			pam.loadGridData(ww, wh, c, r);
 			pam.gp.load();
 
-		} else if (response == 1)
-
-		{
-			System.out.println("no");
-			this.GIP(pam);
-		} else {
-			this.GIP(pam);
-		}
-
+//		} else if (response == 1)
+//
+//		{
+//			System.out.println("no");
+//			this.GIP(pam);
+//		} else {
+//			this.GIP(pam);
+//		}
 	}
 
 	public void GIP(PixelArtMaker pam) {
